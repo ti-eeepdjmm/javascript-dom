@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const calcula_imc = function(peso, altura){
+            let imc = peso / (altura * altura);
+            return imc;
+        }
+
+
+        let peso = parseFloat(prompt("Digite o peso"));
+        let altura = parseFloat(prompt("Digite a altura"));
+        let imc = calcula_imc(peso, altura)
+        alert(`O IMC é: ${imc}`);
+        if(imc < 18.5){
+            alert("Abaixo do peso ideal(Coma mais meu fi!)")
+        }else if(imc >= 18.6 && imc <= 24.9){
+            alert("Você está no peso ideal (Parabéns!)");
+        }else if(imc >= 25.0 && imc <= 29.9){
+            alert("Levemente acima do peso(Faça uma dieta!)");
+        }else if(imc >= 30.0 && imc <= 34.9){
+            alert("Obesidade grau I(Faça uma dieta urgentemente!)");
+        }else{
+            alert("Você vai morrer sua bola!");
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

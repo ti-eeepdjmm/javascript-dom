@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function area_circulo(raio){
+            const PI = 3.14;
+            let area = PI * (raio * raio);
+            return area;
+        }
+
+        let raio_recebido = parseFloat(prompt("Entre com o raio do círculo"));
+        let area_calculada = area_circulo(raio_recebido);
+        alert(`A área do círculo é:${area_calculada}`);
+    </script>
+</head>
+<body>
+   <h1>Área do Círculo</h1> 
+</body>
+</html>
