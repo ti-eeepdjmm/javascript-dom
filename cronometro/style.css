@@ -9,6 +9,7 @@ body{
     flex-wrap: wrap;
     height: 100vh;
     padding: 0px 80px;
+    transition: background-color 0.4s ease-in-out;
 }
 
 #cronometro{
@@ -17,6 +18,7 @@ body{
     font-size: 8em;
     width: 100vw;
 }
+
 
 #btn-modo-noturno{
     display: flex;
@@ -32,9 +34,7 @@ body{
     transition: all 0.5s;
 }
 
-#btn-modo-noturno > #icone-desligar{
-    display: none;
-}
+
 
 #btn-modo-noturno:hover{
     color:#fff;
@@ -44,4 +44,8 @@ body{
 .modo-noturno{
     color:#ffffff;
     background-color: #000000;
+}
+
+.invisivel{
+    display: none;
 }
